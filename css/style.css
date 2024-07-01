@@ -195,10 +195,102 @@
 }
 
 /* MAIN CONTENT HERE START */
-.earnnowbtn {
-  border: 2px solid transparent;
-  /* background-color: red; */
+.my-carsousel-item {
+  position: relative;
 }
+
+.my-carsousel-item .container {
+  position: relative;
+  z-index: 1;
+}
+
+.my-carsousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.my-carsousel-item .right-side-title {
+  z-index: 2;
+}
+
+.my-carsousel-item .right-side-title p {
+  color: #dc9c2a;
+}
+.my-carsousel-item h1,
+.my-carsousel-item h2,
+.my-carsousel-item p,
+.my-carsousel-item a {
+  z-index: 2;
+}
+
+.my-carsousel-item .display-4 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.my-carsousel-item h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.my-carsousel-item .lead {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.my-carsousel-item .btn {
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.my-carsousel-item .btn:hover {
+  background-color: #ff3333;
+  transform: scale(1.05);
+}
+
+.bg-dark.opacity-75 {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.form-control {
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-danger {
+  background-color: #dc9c2a;
+  border-color: #dc9c2a;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  /* border-color: #bd2130; */
+}
+
 /* MAIN CONTENT HERE END */
 
 /* <!-- Rent Flow start --> */
@@ -564,3 +656,13 @@
   border: 1px solid #dc9c2a;
 }
 /* Newsletter here end */
+
+/* --------------------------------------------------- */
+/* Login_sytem Style start here  */
+.login-left-side {
+  background-image: url("../images/login.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* Login_sytem Style End here  */
