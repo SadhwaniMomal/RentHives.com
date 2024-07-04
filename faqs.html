@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rent Hives</title>
+    <!-- BOOTSTRAP CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- BOOTSTRAP JS CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- FONT AWESOME CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CUSTOM CSS LINK -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- CUSTOM JS LINK -->
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="my-contact px-5 text-end">
+      <!-- Added text-right class -->
+      <span class="navbar-contact fs-5">
+        <i class="fas fa-phone-alt"></i> +1-234-567-890
+      </span>
+    </div>
+
+    <!-- NAVBAR STARTING HERE  -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid d-flex align-items-center my-nav">
+        <!-- Mobile menu button -->
+        <button
+          class="my-menu d-lg-none d-block px-3"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <i class="fa-solid fa-bars fs-2 my-icon border border-0"></i>
+        </button>
+
+        <!-- Logo -->
+        <img
+          src="./images/new logo concept rent hives web-04-05.svg"
+          alt="Rent Hives Logo"
+          class=""
+        />
+
+        <!-- Offcanvas menu -->
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <img
+              src="./images/new logo concept rent hives web-04-05.svg"
+              alt="Rent Hives Logo"
+              class=""
+            />
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+              <!-- Navigation links -->
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-dark"
+                  href="#"
+                  id="womensDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Women's Woes
+                </a>
+                <ul
+                  class="dropdown-menu center-dropdown-items"
+                  aria-labelledby="womensDropdown"
+                >
+                  <li><a class="dropdown-item" href="#">Lovely Looks </a></li>
+                  <li><a class="dropdown-item" href="#">Bridal Bliss</a></li>
+                  <li><a class="dropdown-item" href="#">Chic Campus</a></li>
+                  <li><a class="dropdown-item" href="#">Glam Galz</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-dark"
+                  href="#"
+                  id="mensDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Men's Marry
+                </a>
+                <ul
+                  class="dropdown-menu center-dropdown-items"
+                  aria-labelledby="mensDropdown"
+                >
+                  <li><a class="dropdown-item" href="#">Groom Gear</a></li>
+                  <li><a class="dropdown-item" href="#">Party Picks</a></li>
+                  <li><a class="dropdown-item" href="#">Campus Cool</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Office Officials</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Travels Trends</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-dark"
+                  href="#"
+                  id="specialOccasionsDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Special Occasions
+                </a>
+                <ul
+                  class="dropdown-menu center-dropdown-items"
+                  aria-labelledby="specialOccasionsDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">Bridal Bliss (Women's)</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Groom Gear (Men's) </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Party Picks (Both) </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-dark"
+                  href="#"
+                  id="travelVacationsDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Celebrities Choice
+                </a>
+                <ul
+                  class="dropdown-menu center-dropdown-items"
+                  aria-labelledby="travelVacationsDropdown"
+                >
+                  <li><a class="dropdown-item" href="#">Trendy Picks </a></li>
+                  <li><a class="dropdown-item" href="#">Trendy Picks </a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="faqs.html">FAQ's</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right side icons -->
+        <div class="right-icons d-flex align-items-center">
+          <a href="#" class="nav-links px-0 m-0" id="searchIcon"
+            ><i class="fas fa-search fs-5"></i
+          ></a>
+          <a href="./signup.html" class="nav-links" id="userIcon"
+            ><i class="fas fa-user fs-5"></i
+          ></a>
+          <button class="btn px-3 py-2" id="earnNowButton">Earn Now</button>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR ENDING HERE  -->
+
+    <!-- MAIN CONTENT START -->
+    <div
+      class="h-100 mb-5 py-5"
+      style="
+        background-image: url('./images/ecommerce-2140604_1280.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: 1 !important;
+        height: 450px !important;
+      "
+    >
+      <div
+        class="container h-100 d-flex justify-content-center align-items-center"
+      >
+        <div class="text-center text-white p-5 right-side-title">
+          <h2 class="text-black fs-1 fw-bold">FAQ's</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT END -->
+
+    <!-- Footer -->
+    <footer class="container-fluid px-3 bg-light d-none d-lg-block">
+      <div class="row py-4 px-4 justify-content-center">
+        <!-- Logo and Social Icons Section -->
+        <div class="col-12 col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
+          <img
+            src="./images/new logo concept rent hives web-04-05.svg"
+            alt="Logo"
+            class="img-fluid mb-3"
+            style="width: 200px"
+          />
+        </div>
+
+        <!-- Links Section -->
+        <div class="col-12 col-lg-8">
+          <div class="row justify-content-center py-5">
+            <!-- Women's Section -->
+            <div class="col-12 col-md-3 mb-4 mb-md-0 text-center text-md-start">
+              <h5 class="text-black">Women's</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-decoration-none text-black"
+                    >Bridal Bliss</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none text-black"
+                    >Chic Campus</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none text-black"
+                    >Glam Galz</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none text-black"
+                    >Lovely Looks</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Men's Section -->
+            <div class="col-12 col-md-3 mb-4 mb-md-0 text-center text-md-start">
+              <h5 class="text-black">Men's</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-decoration-none text-black"
+                    >Campus Cool</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none text-black"
+                    >Groom Gear</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none text-black"
+                    >Office Officials</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none text-black"
+                    >Party Picks</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none text-black"
+                    >Travel Trends</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Special Occasions Section -->
+            <div class="col-12 col-md-3 mb-4 mb-md-0 text-center text-md-start">
+              <h5 class="text-black">Special Occasions</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-decoration-none text-black"
+                    >Weddings</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none text-black"
+                    >Festivals</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none text-black"
+                    >Red Carpet & High Profile Events</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none text-black"
+                    >Corporate & Formal Events</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none text-black"
+                    >Theme Parties</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Travel & Vacations Section -->
+            <div class="col-12 col-md-3 text-center text-md-start">
+              <h5 class="text-black">Travel & Vacations</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-decoration-none text-black"
+                    >Premiere Outfits</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none text-black"
+                    >Gala Attire</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none text-black"
+                    >Conference Attire</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none text-black"
+                    >Western Outfits</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none text-black"
+                    >Modest Attire</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-12 text-center">
+          <div class="social-icons py-2">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="text-decoration-none me-3"
+            >
+              <i class="fab fa-facebook-f fa-lg text-muted"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              class="text-decoration-none me-3"
+            >
+              <i class="fab fa-youtube fa-lg text-muted"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="text-decoration-none me-3"
+            >
+              <i class="fab fa-instagram fa-lg text-muted"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              class="text-decoration-none"
+            >
+              <i class="fab fa-linkedin-in fa-lg text-muted"></i>
+            </a>
+          </div>
+          <p class="text-muted mb-0">
+            &copy; 2024 Your Company. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
