@@ -70,16 +70,13 @@
 
 .nav-item .nav-link {
   color: rgb(0, 0, 0);
-  margin-left: 15px;
   transition: 0.5s ease;
-}
-
-.navbar-nav {
-  margin: auto;
+  cursor: pointer;
 }
 
 .navbar-nav .nav-item .nav-link {
-  padding: 10px 40px;
+  margin: auto;
+  padding: 15px 35px;
   font-size: 14px;
   font-weight: 500;
 }
@@ -676,3 +673,30 @@
   background-size: cover;
 }
 /* Login_sytem Style End here  */
+
+/* ------------------------------------------------------ */
+/* Contact us page start here */
+/* Contact Section Start HEre */
+.my-form-container .form-contact-info i {
+  font-size: 2rem;
+  color: #dc9c2a;
+}
+
+.my-form-container .contact-side {
+  background-color: #fefcfc;
+}
+
+.my-form-container .form-control {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}
+
+.my-form-container .btn-custom {
+  background-color: #dc9c2a;
+  color: white;
+}
+
+/* Contact end here */
+/* Contact us page end here */
