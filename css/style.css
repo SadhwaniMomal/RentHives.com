@@ -700,3 +700,95 @@
 
 /* Contact end here */
 /* Contact us page end here */
+
+/* FAQ's Start section css */
+.search-container {
+  position: relative;
+  max-width: 300px;
+  margin: 20px auto;
+}
+.search-input {
+  width: 100%;
+  padding-right: 2.5rem; /* Make space for the icon */
+}
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* accordion */
+.accordion-header {
+  background-color: transparent !important;
+  color: black;
+  border: none;
+  outline: none;
+}
+
+.accordion-button {
+  background-color: transparent !important;
+  color: black !important;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: space-between; /* Aligns text to the left and icon to the right */
+  align-items: center;
+  padding-left: 20px; /* Adjust padding for better alignment */
+}
+
+.accordion-icon {
+  background-color: #d1b87b;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+  transition: transform 0.2s; /* Smooth transition for rotation */
+}
+
+/* support start here */
+.support-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: ghostwhite;
+}
+.support-images {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin-bottom: 20px; /* Space between images and text */
+}
+.support-images img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 2px solid lightgrey;
+}
+.support-images .img1 {
+  top: 20px;
+  left: 25px;
+  border-radius: 50%;
+}
+.support-images .img2 {
+  top: 20px;
+  right: 25px;
+  border-radius: 50%;
+}
+.support-images .img3 {
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Ensure the front image is above the others */
+  border-radius: 50%; /* Mak*/
+}
+/* support end here */
+/* FAQ's end section css */
