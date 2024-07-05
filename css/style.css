@@ -81,6 +81,9 @@
     padding: 0px !important;
     display: inline-block;
   }
+  .right-icons button {
+    padding: 5px !important;
+  }
 }
 
 .nav-item .nav-link {
