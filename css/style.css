@@ -10,6 +10,7 @@
 }
 
 /* Navbar styles */
+
 .navbar-collapse {
   justify-content: flex-end; /* Align right items to the end */
 }
@@ -19,6 +20,8 @@
   align-items: center;
   gap: 1rem;
 }
+
+/* Offcanvas menu styles */
 
 /* Offcanvas menu styles */
 .sidebar {
@@ -63,21 +66,21 @@
 
 @media (max-width: 992px) {
   .navbar .my-nav img {
-    width: 35%;
     height: auto;
   }
 }
+
 @media (max-width: 245px) {
   * {
     overflow-x: hidden !important;
   }
+
   .navbar-contact {
     font-size: 15px !important;
   }
   .navbar {
     margin: 0;
     padding: 0;
-    height: auto;
   }
   .my-menu {
     margin-left: 0px !important;
@@ -95,6 +98,7 @@
   .navbar .my-nav .logo {
     margin-right: 90px;
     border: 2px solid;
+    width: 35% !important;
     height: auto;
   }
   .right-icons {
@@ -124,15 +128,14 @@
 }
 
 .navbar-nav .nav-item .nav-link {
-  margin: auto;
-  padding: 15px 35px;
+  padding: 25px;
   font-size: 14px;
   font-weight: 500;
 }
-@media screen and (min-width: 1181px) and (max-width: 1190px) {
+@media screen and (min-width: 1024px) and (max-width: 1190px) {
   .navbar-nav .nav-item .nav-link {
     margin: auto;
-    padding: 15px 15px;
+    padding: 4px !important;
     font-size: 14px;
     font-weight: 500;
   }
@@ -398,6 +401,7 @@
   font-size: 14px;
   color: #dc9c2a;
 }
+
 /* <!-- Rent Flow end --> */
 
 /* Compare strat here  */
@@ -444,60 +448,25 @@
 }
 /* Compare end here */
 
-/* Quality is our Habit  */
-.custom-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; /* Adjusted to min-height for smaller content */
-  /* Optional background color */
-  /* background-color: #f0f0f0; */
+/* Counter start here  */
+.counter {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
 }
 
-.content {
-  background-color: #dc9c2a;
-  color: white;
-  padding: 40px;
-  margin-left: -150px;
-  margin-top: 60px;
-  height: 30%;
-  border-radius: 0 15px 15px 0;
+.count {
+  font-size: 3rem;
+  color: #17a2b8;
 }
 
-.image img {
-  width: 100%;
-  height: auto; /* Ensures image maintains aspect ratio */
-  border-radius: 15px 0 0 15px;
+p {
+  font-size: 1.2rem;
+  color: #6c757d;
 }
-
-.content button {
-  padding: 10px 20px;
-  font-size: 1em;
-  color: #b72b56;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.content button:hover {
-  background-color: #e0e0e0;
-}
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  .custom-container {
-    min-height: auto; /* Reset height for smaller screens */
-  }
-  .content {
-    margin-top: 20px; /* Adjust margin top */
-    margin-left: 0; /* Remove negative margin */
-    border-radius: 0px; /* Adjust border-radius */
-  }
-}
-
-/* Quality is our Habit */
+/* Counter end here  */
 
 /* Explore our top deal start */
 /* Top Deals Section */
@@ -581,6 +550,45 @@
 }
 
 /* Explore our top deal end */
+/* explore subscription start here */
+.my-subscription-plan {
+  background-color: #edca8d;
+  padding: 50px;
+}
+.text-section h2 {
+  font-style: italic;
+}
+.plan {
+  height: auto;
+  width: auto;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  position: relative;
+}
+
+.recommended::after {
+  content: "Recommended";
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  background-color: black;
+  color: white;
+  padding: 2px 5px;
+  font-size: 12px;
+}
+.best-value::after {
+  content: "Best Value";
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  background-color: black;
+  color: white;
+  padding: 2px 5px;
+  font-size: 12px;
+}
+/* explore subscription end here */
 
 /* Nice Thing Start Here  */
 .custom-containers {
