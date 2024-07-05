@@ -617,7 +617,21 @@ p {
   border-radius: 50%;
   padding: 5px;
 }
+.fade-in-content {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.fade-in-content.show {
+  opacity: 1;
+}
 /* my filter section end here */
+
+/* Brands start here  */
+.brand-imgs {
+  background-color: #ddd;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+/* Brands s here  */
 
 /* Nice Thing Start Here  */
 .custom-containers {

@@ -40,9 +40,7 @@
     </div>
 
     <!-- NAVBAR STARTING HERE  -->
-    <nav
-      class="navbar navbar-expand-lg fixed-top h-100 w-100 border border-danger border-2"
-    >
+    <nav class="navbar navbar-expand-lg fixed-top h-100 w-100">
       <div class="container-fluid d-flex align-items-center my-nav w-100">
         <!-- Mobile menu button -->
         <button
@@ -297,7 +295,7 @@
     </div>
     <!-- MAIN CONTENT END -->
     <!-- Rent Flow start -->
-    <div class="container py-3 border border-danger border-2 mb-3">
+    <div class="container py-3 mb-3">
       <div class="section-title">
         <p class="m-0">Follow steps to rent</p>
         <h2 class="m-0">Our Rent Flow</h2>
@@ -349,7 +347,7 @@
     </div>
     <!-- Rent Flow END -->
     <!--Compare product start here-->
-    <div class="container py-4 border border-danger border-2 mb-3">
+    <div class="container py-4 mb-3">
       <div class="row">
         <ul class="nav justify-content-end py-3">
           <li class="nav-item my-nav-tab active">
@@ -562,7 +560,7 @@
     <!-- explore subscription plan end here  -->
 
     <!-- Explore other dress start -->
-    <div class="container border border-danger border-2 mb-3">
+    <div class="container mb-3">
       <div class="top-deals py-1 text-center">
         <p class="m-0 title">Best services from top rated</p>
         <h3>Explore Our Top Deals</h3>
@@ -962,27 +960,24 @@
     <!-- Explore other dress end-->
 
     <!-- filter section start here  -->
-    <div class="container my-filter-container mb-3 border border-danger py-3">
+    <div class="container my-filter-container mb-3 py-3">
       <div class="row align-items-center mb-2">
-        <!-- Column for dropdown button -->
         <div class="col-12 col-md-3 mb-2 mb-md-0">
           <div class="dropdown my-drop">
             <button
               class="btn border border-dark rounded-0 dropdown-toggle w-100"
               type="button"
               id="dropdownMenuButton1"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
+              data-bs-toggle="modal"
+              data-bs-target="#chooseHowYouRentModal"
             >
               <i class="fa-solid fa-weight-hanging"></i> Choose how you rent
             </button>
           </div>
         </div>
-        <!-- Column for results count -->
         <div class="col-6 col-md-3 text-md-end mb-2 mb-md-0">
           <span>6863 results</span>
         </div>
-        <!-- Column for sort button and filters -->
         <div class="col-6 col-md-6 d-flex justify-content-end">
           <div class="btn-group me-2">
             <button
@@ -1008,6 +1003,47 @@
           <button class="btn ms-2 border border-dark rounded-0" type="button">
             <i class="fa-solid fa-arrow-up-z-a"></i> Filters
           </button>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="chooseHowYouRentModal"
+        tabindex="-1"
+        aria-labelledby="chooseHowYouRentLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="chooseHowYouRentLabel">
+                Choose how you rent
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-center fade-in-content">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <i class="fas fa-box-open fa-2x mb-2"></i>
+                  <h5 class="card-title">With Subscription</h5>
+                  <p class="card-text">Create shipments with 5+ items</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <i class="fas fa-calendar-alt fa-2x mb-2"></i>
+                  <h5 class="card-title">For Special Occasions</h5>
+                  <p class="card-text">Book items for specific dates</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -1096,13 +1132,32 @@
         </div>
       </div>
     </div>
-
     <!-- filter section end here  -->
 
+    <!-- Brand name start here -->
+    <div class="container mb-3 py-5 px-3 brand-imgs">
+      <h2 class="py-4 fst-italic text-center fs-1">Why Try Subscription?</h2>
+
+      <div class="row justify-content-center align-items-center px-4 py-2">
+        <div class="col-md-3">
+          <i class="fa-solid fa-circle-check"></i> 1:1 personal styling via text
+        </div>
+        <div class="col-md-3">
+          <i class="fa-solid fa-circle-check"></i> 750+ designers and counting
+        </div>
+        <div class="col-md-3">
+          <i class="fa-solid fa-circle-check"></i> Fast, free shipping & dry
+          cleaning
+        </div>
+        <div class="col-md-3">
+          <i class="fa-solid fa-circle-check"></i> Newness for every day
+        </div>
+      </div>
+    </div>
+    <!-- Brand name start here -->
+
     <!-- Nice Things People Say Section Start -->
-    <div
-      class="container custom-containers py-5 border border-danger border-2 mb-3"
-    >
+    <div class="container custom-containers py-5 mb-3">
       <div class="row text-center">
         <p class="m-0 title">People Say The Nicest Things</p>
         <h3 class="m-0">What Our Clients Say</h3>
@@ -1178,9 +1233,7 @@
     <!-- Nice Things People Say Section End -->
 
     <!-- Newsletters start here  -->
-    <div
-      class="container-fluid container-newsletter d-none d-lg-block border border-danger border-2"
-    >
+    <div class="container-fluid container-newsletter d-none d-lg-block">
       <h1>Subscribe To Our Newsletter</h1>
       <p>Would you like to get more solved problems every day?</p>
       <div class="form-group">

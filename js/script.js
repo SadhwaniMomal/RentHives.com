@@ -181,3 +181,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 // Nice thing end here
+
+// filter start here
+$("#chooseHowYouRentModal").on("shown.bs.modal", function () {
+  $(".fade-in-content").addClass("show");
+});
+$("#chooseHowYouRentModal").on("hidden.bs.modal", function () {
+  $(".fade-in-content").removeClass("show");
+});
