@@ -590,6 +590,35 @@ p {
 }
 /* explore subscription end here */
 
+/* my filter section start here */
+.my-filter-container .my-drop {
+  background-color: white;
+  color: black;
+}
+.my-filter-container .my-drop .dropdown-item {
+  background-color: white;
+  color: #000000;
+  border-radius: 0px;
+}
+
+.img-container {
+  position: relative;
+}
+.img-container img {
+  width: 100%;
+  height: auto;
+}
+.img-container .fa-heart {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+/* my filter section end here */
+
 /* Nice Thing Start Here  */
 .custom-containers {
   max-width: 900px;
