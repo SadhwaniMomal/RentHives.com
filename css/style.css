@@ -410,10 +410,10 @@
   margin: 5px;
   color: white;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 450px) {
   .my-nav-tabs .nav-link {
     background-color: #dc9c2a !important;
-    margin: 15px;
+    margin: 3px;
     color: white;
   }
 }
