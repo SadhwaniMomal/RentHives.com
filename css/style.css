@@ -410,13 +410,14 @@
   margin: 5px;
   color: white;
 }
-@media (max-width: 450px) {
+@media (max-width: 411px) {
   .my-nav-tabs .nav-link {
-    background-color: #dc9c2a !important;
-    margin: 3px;
-    color: white;
+    display: inline-block !important;
+    white-space: nowrap;
+    margin: 1px 0;
   }
 }
+
 .latest-scoop {
   .latest-scoop {
     margin-top: 20px;
@@ -447,7 +448,9 @@
   /* Media query for devices larger than the large breakpoint */
   @media (min-width: 992px) {
     .compare {
-      right: 3px; /* Adjusted positioning for larger devices */
+      top: 0;
+      right: 0px; /* Adjusted positioning for larger devices */
+      padding: 1px;
     }
   }
 
