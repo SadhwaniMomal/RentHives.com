@@ -406,8 +406,9 @@
 
 /* Compare strat here  */
 .my-nav-tabs .nav-link {
-  background-color: #d1b87b !important;
+  background-color: #dc9c2a !important;
   margin: 15px;
+  color: white;
 }
 .latest-scoop {
   .latest-scoop {
@@ -434,24 +435,6 @@
     border: 1px solid #ccc;
     border-radius: 5px;
   }
-
-  /* .my-nav-tabs.active {
-    background-color: #dc9c2a !important;
-    color: #fff;
-  }
-
-  .my-nav-tabs.active::before {
-    content: "";
-    position: absolute;
-    left: -10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 8px;
-    height: 8px;
-    background-color: #dc3545;
-    border-radius: 50%;
-    color: white;
-  } */
 
   .fixed-height {
     height: 400px; /* Fixed height */
@@ -884,7 +867,7 @@ p {
 
 .accordion-icon {
   background-color: #d1b87b;
-  width: 20px;
+  /* width: 20px; */
   height: 20px;
   color: #fff;
   display: flex;
