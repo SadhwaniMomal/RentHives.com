@@ -35,6 +35,7 @@ function showContent(tabName, event) {
   // Mark the selected tab as active
   event.target.parentNode.classList.add("active");
 }
+
 // Compare container functionall end
 
 // <!-- Explore other dress start -->
